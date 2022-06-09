@@ -1,8 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { ConfirmationService, MessageService } from 'primeng/api';
 import { DialogService } from 'primeng/dynamicdialog';
-import { take } from 'rxjs';
-import { FormComponent } from '../form/form.component';
 
 @Component({
   selector: 'app-note',
@@ -15,6 +13,7 @@ export class NoteComponent implements OnInit {
   @Input() id!: number;
   @Output() onDelete: EventEmitter<number> = new EventEmitter();
   @Output() onEdit: EventEmitter<number> = new EventEmitter();
+  @Output() onShow: EventEmitter<number> = new EventEmitter();
   public title!: string;
   public description!: string;
   public tags!: string[];
@@ -26,13 +25,13 @@ export class NoteComponent implements OnInit {
   ngOnInit(): void {
     this.title = this.note.title;
     this.description = this.note.description;
-    this.tags = this.description
-      .split(' ')
-      .filter((item) => item[0] === '#')
-      .map((item: string) => item.substring(1, item.length));
+    this.tags = this.note.tags;
   }
   edit() {
     this.onEdit.emit(this.id);
+  }
+  show() {
+    this.onShow.emit(this.id);
   }
   delete() {
     this.confirm.confirm({

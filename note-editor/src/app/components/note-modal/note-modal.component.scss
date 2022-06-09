@@ -1,0 +1,12 @@
+:host {
+  .tags {
+    display: flex;
+    column-gap: 5px;
+    padding-bottom: 5px;
+    span {
+      background: #3f51b57e;
+      border-radius: 5px;
+      padding: 5px;
+    }
+  }
+}

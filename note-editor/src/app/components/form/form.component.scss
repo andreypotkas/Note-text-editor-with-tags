@@ -1,7 +1,9 @@
 :host {
   display: block;
-  min-width: 300px;
+  width: 800px;
+  min-width: 260px;
   margin: 0 auto;
+
   .tags {
     display: flex;
     column-gap: 5px;
@@ -17,10 +19,6 @@
     height: 60px;
     font-size: 1rem;
   }
-  .ng-valid,
-  .ng-valid.required {
-    border: 3px solid #42a948;
-  }
 
   .ng-invalid:not(form) {
     border: 3px solid #a94442;
@@ -34,5 +32,11 @@
     color: #820000;
     background-color: #fed3d3;
     border-radius: 5px;
+  }
+}
+@media (max-width: 600px) {
+  :host {
+    width: 260px;
+    min-width: 260px;
   }
 }

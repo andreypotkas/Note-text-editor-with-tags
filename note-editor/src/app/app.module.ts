@@ -12,9 +12,11 @@ import { NoteComponent } from './components/note/note.component';
 import { FormComponent } from './components/form/form.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FilterPipe } from './pipes/filter.pipe';
+import { CutPipe } from './pipes/cut.pipe';
+import { NoteModalComponent } from './components/note-modal/note-modal.component';
 
 @NgModule({
-  declarations: [AppComponent, MainComponent, NoteComponent, FormComponent, FilterPipe],
+  declarations: [AppComponent, MainComponent, NoteComponent, FormComponent, FilterPipe, CutPipe, NoteModalComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

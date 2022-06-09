@@ -7,6 +7,7 @@
 <app-note
   (onDelete)="delete($event)"
   (onEdit)="edit($event)"
+  (onShow)="show($event)"
   [id]="i"
   [note]="note"
   *ngFor="let note of notes | filter: filter.value; let i = index"

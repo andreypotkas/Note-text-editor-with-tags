@@ -1,22 +1,27 @@
 [
   {
     "title": "Note 1",
-    "description": "Go to #school, #gym, #shop"
+    "description": "Go to school, gym, shop",
+    "tags": ["school", "gym", "shop"]
   },
   {
     "title": "Note 2",
-    "description": "Go to #shop before 15.00"
+    "description": "Go to shop before 15.00",
+    "tags": ["shop"]
   },
   {
     "title": "Note 3",
-    "description": "Go to #gym before 20.00"
+    "description": "gym program: run 3km",
+    "tags": ["gym", "run"]
   },
   {
     "title": "Note 4",
-    "description": "Description #note 4"
+    "description": "learn English 1 Unit ",
+    "tags": ["learn"]
   },
   {
     "title": "Note 5",
-    "description": "Description note 5"
+    "description": "learn js angular components, directives",
+    "tags": ["learn", "angular"]
   }
 ]
