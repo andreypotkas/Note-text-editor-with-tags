@@ -11,9 +11,10 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { NoteComponent } from './components/note/note.component';
 import { FormComponent } from './components/form/form.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FilterPipe } from './pipes/filter.pipe';
 
 @NgModule({
-  declarations: [AppComponent, MainComponent, NoteComponent, FormComponent],
+  declarations: [AppComponent, MainComponent, NoteComponent, FormComponent, FilterPipe],
   imports: [
     BrowserModule,
     AppRoutingModule,

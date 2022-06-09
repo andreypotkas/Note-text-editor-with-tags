@@ -1,27 +1,22 @@
 [
   {
     "title": "Note 1",
-    "description": "Description note 1",
-    "tags": "sport, work, rest"
+    "description": "Go to #school, #gym, #shop"
   },
   {
     "title": "Note 2",
-    "description": "Description note 2",
-    "tags": "sport, work, rest"
+    "description": "Go to #shop before 15.00"
   },
   {
     "title": "Note 3",
-    "description": "Description note 3",
-    "tags": "sport, work, rest"
+    "description": "Go to #gym before 20.00"
   },
   {
     "title": "Note 4",
-    "description": "Description note 4",
-    "tags": "sport, work, rest"
+    "description": "Description #note 4"
   },
   {
     "title": "Note 5",
-    "description": "Description note 5",
-    "tags": "sport, work, rest"
+    "description": "Description note 5"
   }
 ]

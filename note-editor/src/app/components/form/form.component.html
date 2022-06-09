@@ -39,6 +39,10 @@
       "
       class="alert alert-danger"
     ></div>
+    <div class="tags">
+      <span *ngFor="let tag of tags">{{ tag }}</span>
+    </div>
   </div>
+
   <button pButton pRipple type="submit" label="Submit"></button>
 </form>

@@ -2,19 +2,12 @@
   <button pButton pRipple type="button" class="p-button" (click)="add()">
     <i class="pi pi-plus-circle" style="font-size: 2rem"></i>
   </button>
-  <input
-    name="title"
-    formControlName="title"
-    id="title"
-    type="search"
-    pInputText
-    class="w-full mb-3"
-  />
+  <input #filter type="search" pInputText class="w-full mb-3" />
 </div>
 <app-note
   (onDelete)="delete($event)"
   (onEdit)="edit($event)"
   [id]="i"
   [note]="note"
-  *ngFor="let note of notes; let i = index"
+  *ngFor="let note of notes | filter: filter.value; let i = index"
 ></app-note>

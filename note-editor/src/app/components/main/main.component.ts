@@ -46,6 +46,7 @@ export class MainComponent implements OnInit {
       data: {
         title: this.notes[id].title,
         description: this.notes[id].description,
+        tags: this.notes[id].tags,
       },
     });
     ref.onClose.pipe(take(1)).subscribe((note) => {

@@ -26,7 +26,10 @@ export class NoteComponent implements OnInit {
   ngOnInit(): void {
     this.title = this.note.title;
     this.description = this.note.description;
-    this.tags = this.note.tags.split(',');
+    this.tags = this.description
+      .split(' ')
+      .filter((item) => item[0] === '#')
+      .map((item: string) => item.substring(1, item.length));
   }
   edit() {
     this.onEdit.emit(this.id);
