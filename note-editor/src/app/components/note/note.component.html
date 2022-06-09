@@ -1,0 +1,37 @@
+<div class="title">
+  <h2>{{ title }}</h2>
+  <button
+    pButton
+    pRipple
+    type="button"
+    icon="pi pi-eye"
+    class="p-button-rounded p-button-text"
+    (click)="show()"
+  ></button>
+  <button
+    pButton
+    pRipple
+    type="button"
+    icon="pi pi-pencil"
+    class="p-button-rounded p-button-text"
+    (click)="edit()"
+  ></button>
+  <button
+    pButton
+    pRipple
+    type="button"
+    icon="pi pi-trash"
+    class="p-button-rounded p-button-text"
+    (click)="delete()"
+  ></button>
+</div>
+<p>{{ description }}</p>
+<div class="tags">
+  <span *ngFor="let tag of tags">{{ tag }}</span>
+</div>
+
+<p-toast [style]="{ marginTop: '80px' }"></p-toast>
+<p-confirmDialog
+  header="Delete note"
+  icon="pi pi-exclamation-triangle"
+></p-confirmDialog>
